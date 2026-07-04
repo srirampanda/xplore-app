@@ -44,7 +44,7 @@ export function Footer() {
           </div>
           <p className="mt-3 max-w-xs text-sm text-ink-400">
             Budget-friendly treks, stays, and scenic drive routes for people
-            who'd rather spend on trail time than markup.
+            who&apos;d rather spend on trail time than markup.
           </p>
         </div>
 
