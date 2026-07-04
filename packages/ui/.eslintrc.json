@@ -1,0 +1,3 @@
+{
+  "extends": "@xplore/config/eslint-preset.js"
+}
