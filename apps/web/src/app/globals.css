@@ -27,3 +27,12 @@
     @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
   }
 }
+
+.trek-marker-icon {
+  background: transparent;
+  border: none;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0.75rem;
+}

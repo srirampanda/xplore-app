@@ -2,11 +2,17 @@ export type Difficulty = "Easy" | "Moderate" | "Challenging" | "Strenuous";
 export type BudgetTier = "Budget" | "Mid-range" | "Splurge";
 export type StayType = "Homestay" | "Guesthouse" | "Campsite" | "Hostel" | "Eco Lodge";
 
+export interface Trailhead {
+  lat: number;
+  lng: number;
+}
+
 export interface Trek {
   slug: string;
   name: string;
   region: string;
   country: string;
+  trailhead: Trailhead;
   difficulty: Difficulty;
   durationDays: number;
   distanceKm: number;

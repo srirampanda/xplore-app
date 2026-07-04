@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { TrekCard } from "@/components/TrekCard";
+import { TreksExplorer } from "@/components/TreksExplorer";
 import { treks } from "@/lib/data";
 import type { Difficulty } from "@/lib/types";
 import { TrekFilters } from "./TrekFilters";
@@ -54,11 +54,7 @@ export default function TreksPage({
       />
 
       {filtered.length > 0 ? (
-        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((trek) => (
-            <TrekCard key={trek.slug} trek={trek} />
-          ))}
-        </div>
+        <TreksExplorer treks={filtered} />
       ) : (
         <div className="mt-16 rounded-2xl border border-dashed border-ink-100 py-16 text-center">
           <p className="font-display text-lg font-semibold text-ink-800">
